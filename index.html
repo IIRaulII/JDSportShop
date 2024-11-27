@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JD Shop</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.jdsports.es/skins/jdsports-desktop/public/img/icons/app/favicon.ico"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">JD</div>
+      <nav>
+        <ul>
+          <li><a href="#">Hombre</a></li>
+          <li><a href="#">Mujer</a></li>
+          <li><a href="#">Niños</a></li>
+          <li><a href="#">Ofertas</a></li>
+        </ul>
+      </nav>
+      <div class="icons">
+        <span class="icon">⚙️</span>
+        <span class="icon">🛒</span>
+      </div>
+    </header>
+
+    <div class="banner">
+      <img
+        src="https://res.cloudinary.com/dhs3auft4/image/upload/v1732627558/Proyect1/JD/Cover_pzmdni.png"
+        alt="Banner Tienda"
+      />
+    </div>
+
+    <div class="filters">
+      <select id="categoria" title="Categoria">
+        <option value="">Todas las marcas</option>
+        <option value="nike">Nike</option>
+        <option value="adidas">Adidas</option>
+        <option value="puma">Puma</option>
+        <option value="new balance">New Balance</option>
+      </select>
+
+      <input type="number" id="precio" placeholder="120.00 €" min="0" />
+      <button id="filtrar" class="btn">Filtrar</button>
+      <button id="limpiar" class="btn">Limpiar</button>
+    </div>
+
+    <main>
+      <div id="productos" class="productos"></div>
+    </main>
+
+    <footer>
+      <div class="footer-section">
+        <h3>Compra con JD</h3>
+        <ul>
+          <li><a href="#">Guía de tallas</a></li>
+          <li><a href="#">Buscador de tallas</a></li>
+          <li><a href="#">Descuento estudiantes</a></li>
+          <li><a href="#">Calendario lanzamientos</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Atención al cliente</h3>
+        <ul>
+          <li><a href="#">Preguntas frecuentes</a></li>
+          <li><a href="#">Envíos y devoluciones</a></li>
+          <li><a href="#">Seguimiento de envío</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Aviso legal</h3>
+        <ul>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Política de cookies</a></li>
+          <li><a href="#">Accesibilidad</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
